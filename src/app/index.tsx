@@ -5,8 +5,6 @@ import { commonStyles } from "@/styles/commonStyles";
 import { splashStyles } from "@/styles/splashStyles";
 import CustomText from "@/components/shared/CustomText";
 const Main = () => {
-
-  
   const [loaded] = useFonts({
     Bold: require("../assets/fonts/NotoSans-Bold.ttf"),
     Regular: require("../assets/fonts/NotoSans-Regular.ttf"),
