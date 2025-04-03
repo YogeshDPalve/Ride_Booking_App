@@ -33,7 +33,7 @@ export const useRiderStore = create<RiderStoreProps>()(
     {
       name: "rider-store",
       partialize: (state) => ({
-        user: state.user,
+        user: state.user, 
       }),
       storage: createJSONStorage(() => mmkvStorage),
     }
