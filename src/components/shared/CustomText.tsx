@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native";
+import { Text, StyleSheet } from "react-native";
 import React, { FC } from "react";
 import { Colors } from "@/utils/Constants";
 import { RFValue } from "react-native-responsive-fontsize";
@@ -24,7 +24,7 @@ const CustomText: FC<CustomTextProps> = ({
   return (
     <Text
       style={[
-        style.text,
+        styles.text,
         {
           fontSize: RFValue(fontSize ? fontSize : fontSizes[variant]),
           fontFamily: `NotoSans-${fontFamily}`,
@@ -36,7 +36,7 @@ const CustomText: FC<CustomTextProps> = ({
   );
 };
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
   text: {
     color: Colors.text,
     textAlign: "left",
