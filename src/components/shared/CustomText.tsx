@@ -32,7 +32,9 @@ const CustomText: FC<CustomTextProps> = ({
         style,
       ]}
       numberOfLines={numberOfLines ? numberOfLines : undefined}
-    ></Text>
+    >
+      {children}
+    </Text>
   );
 };
 
